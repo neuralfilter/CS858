@@ -29,7 +29,7 @@ The VM manager that was used is multipass because it is very lightweight compare
 
 ### Installation of bcc
 
-As stated in the installation guide in the bcc github, the readily avaialble packages on the Ubuntu Universe is out of data. Hence to have the most up to date tool, the following installation steps are done directly from the source code.
+As stated in the installation guide in the bcc github, the readily avaialble packages on the Ubuntu Universe is out of date. Hence to have the most up to date tool, the following installation steps are done directly from the source code.
 
 1. Install all the basic packages
    ```
