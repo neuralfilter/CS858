@@ -45,7 +45,7 @@ As stated in the installation guide in the bcc github, the readily avaialble pac
    make -j 8 # provide number of jobs to speed things up
    sudo make install
    cmake -DPYTHON_CMD=python3 .. # build python3 binding
-   p
+   pushd src/python/
    make
    sudo make install
    popd
