@@ -13,7 +13,7 @@ The VM manager that was used is multipass because it is very lightweight compare
 1. Install multipass from this [Multipass site](https://multipass.run)
 2. Run the following command to create a new VM instance  (-n for name, -d for disk size, -m for memory). Default option may be slow at building everything so I use customized options.
    ```
-   multipass launch -n <eBPFLinux> -d 15G -m 10G 
+   multipass launch -n eBPFLinux -d 15G -m 10G 
    ```
 3. Run VM in terminal
    ```
