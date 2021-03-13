@@ -55,11 +55,18 @@ As stated in the installation guide in the bcc github, the readily avaialble pac
 
 ### Setup a of JIT spray for SEMP bypass
 
+To install necessary headers:
+```
+sudo apt-get install linux-source
+```
+To get the repo needed for the SEMP bypass:
 ```
 cd 
 git clone https://github.com/kmcallister/alameda.git
-cd alameda
-gcc -Wall -ggdb alameda.c -o alameda
+cd ko && make
+sudo insmod ko/jump.ko
+echo 1 | sudo tee /proc/sys/net/core/bpf_jit_enable         
+gcc -Wall -O2 -o alameda alameda.c
 ./alameda
 ```
 
