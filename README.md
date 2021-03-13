@@ -53,6 +53,16 @@ As stated in the installation guide in the bcc github, the readily avaialble pac
 3. Check and make sure bcc is importable from python by opening python3 and try importing bcc. Please note that when running python3, it requires escalated priviledge so remember to use sudo.
 4. Example python programs are in the examples folder within the cloned repository
 
+### Setup a of JIT spray for SEMP bypass
+
+```
+cd 
+git clone https://github.com/kmcallister/alameda.git
+cd alameda
+gcc -Wall -ggdb alameda.c -o alameda
+./alameda
+```
+
 # Reference
 
 1. Multipass page: https://multipass.run
