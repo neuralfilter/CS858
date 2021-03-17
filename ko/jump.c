@@ -36,22 +36,7 @@ static ssize_t mywrite(struct file *file, const char __user *buf, size_t len, lo
 
     return len;
 }
- 
-static ssize_t myread(struct file *file, char __user *ubuf,size_t count, loff_t *ppos) 
-{
-	char buf[BUFSIZE];
-	int len=0;
-	if(*ppos > 0 || count < BUFSIZE)
-		return 0;
-	len += sprintf(buf,"irq = %d\n",irq);
-	len += sprintf(buf + len,"mode = %d\n",mode);
-	
-	if(copy_to_user(ubuf,buf,len))
-		return -EFAULT;
-	*ppos = len;
-	return len;
-}
- 
+
 static struct file_operations myops = 
 {
 	.owner = THIS_MODULE,
