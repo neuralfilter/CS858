@@ -70,6 +70,12 @@ gcc -Wall -O2 -o alameda alameda.c
 ./alameda
 ```
 
+### enable BPF JIT
+
+```
+sudo sysctl net.core.bpf_jit_enable=1
+```
+
 # Reference
 
 1. Multipass page: https://multipass.run
