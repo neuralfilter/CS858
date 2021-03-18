@@ -58,3 +58,9 @@ static void simple_cleanup(void)
  
 module_init(simple_init);
 module_exit(simple_cleanup);
+module_init(init_jump);
+module_exit(exit_jump);
+
+MODULE_AUTHOR("Keegan McAllister");
+MODULE_DESCRIPTION("Incredibly insecure kernel module for testing exploitation techniques");
+MODULE_LICENSE("Dual BSD/GPL");
