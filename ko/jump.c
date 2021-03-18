@@ -1,5 +1,5 @@
 //https://devarea.com/linux-kernel-development-creating-a-proc-file-and-interfacing-with-user-space/#.YFKLuZNKi3I
-
+//https://github.com/kmcallister/alameda/blob/master/ko/jump.c
 
 #include <linux/module.h>
 #include <linux/moduleparam.h>
@@ -8,16 +8,6 @@
 #include <linux/proc_fs.h>
 #include <linux/uaccess.h>
 #define BUFSIZE  100
- 
- 
-MODULE_LICENSE("Dual BSD/GPL");
-MODULE_AUTHOR("Liran B.H");
- 
-static int irq=20;
-module_param(irq,int,0660);
- 
-static int mode=1;
-module_param(mode,int,0660);
  
 static struct proc_dir_entry *ent;
  
@@ -62,3 +52,6 @@ module_exit(simple_cleanup);
 MODULE_AUTHOR("Keegan McAllister");
 MODULE_DESCRIPTION("Incredibly insecure kernel module for testing exploitation techniques");
 MODULE_LICENSE("Dual BSD/GPL");
+
+MODULE_LICENSE("Dual BSD/GPL");
+MODULE_AUTHOR("Liran B.H");
