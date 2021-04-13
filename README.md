@@ -18,7 +18,7 @@ gcc -Wall -O2 -o alameda alameda.c
 # CVE Vulnerability exploits
 
 Credits:
-https://github.com/xmzyshypnc/CVE-2020-27194
+https://github.com/xmzyshypnc/CVE-2020-27194 <br>
 https://github.com/ret2hell/CVE-2020-8835
 
 ## How to run
